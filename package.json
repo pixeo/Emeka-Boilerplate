@@ -1,16 +1,30 @@
 {
-  "name": "Emeka-template",
-  "version": "0.1.0",
-  "license": "Copyright Pixeo 2014, all rights reserved",
-  "devDependencies": {
-    "assemble": "*",
-    "grunt": "*",
-    "grunt-autoprefixer": "*",
-    "grunt-contrib-compress": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-watch": "*",
-    "grunt-sass": "*",
-    "load-grunt-tasks": "*",
-    "time-grunt": "*"
-  }
+	"name": "Emeka-boilerplate",
+	"version": "0.1.0",
+	"author": {
+		"twitter": "@pixeo",
+		"name": "Pixeo"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pixeo/Emeka-Boilerplate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/pixeo/Emeka-Boilerplate/issues"
+	},
+	"licenses": [{
+		"type": "MIT",
+		"url": "https://github.com/pixeo/Emeka-Boilerplate/blob/master/LICENSE"
+	}],
+	"devDependencies": {
+		"assemble": "*",
+		"grunt": "*",
+		"grunt-autoprefixer": "*",
+		"grunt-contrib-compress": "*",
+		"grunt-contrib-copy": "*",
+		"grunt-contrib-watch": "*",
+		"grunt-sass": "*",
+		"load-grunt-tasks": "*",
+		"time-grunt": "*"
+	}
 }
