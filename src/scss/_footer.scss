@@ -1,0 +1,15 @@
+/* -------------------------------------
+    Footer
+------------------------------------- */
+#footerImage{}
+
+#unsubscribe,
+#footerText{
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+	color: darken($text-color, 20%);
+
+	a{
+		color: darken($text-color, 20%);
+	}
+}

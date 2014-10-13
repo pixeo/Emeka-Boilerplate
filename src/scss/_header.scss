@@ -1,0 +1,64 @@
+/* -------------------------------------
+    HEADER
+------------------------------------- */
+#top-bar {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: $body-bg;
+	color: $text-color;
+}
+
+.top-bar-content {
+	//font-size: 12px;
+	color: $text-color;
+	font-weight: 300;
+	text-align: left;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+.top-bar-content a {
+	//font-weight: 700;
+	color: darken($text-color, 33%);
+	text-decoration: underline;
+}
+
+#preheader {
+	color: #fff;
+	font-size: 1px;
+	height: 1px;
+	display: none;
+	visibility: hidden;
+}
+
+.header-content, .footer-content-left, .footer-content-right {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+}
+			/* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
+.header-content {
+	font-size: 12px;
+	color: #444;
+}
+
+.header-content a {
+	font-weight: bold;
+	color: #eeeeee;
+	text-decoration: none;
+}
+
+#headline p {
+	color: #eeeeee;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+#headline p a {
+	color: #eeeeee;
+	text-decoration: none;
+}
+
+
+

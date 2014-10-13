@@ -1,0 +1,331 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900,300italic);
+/* -------------------------------------
+    CONFIGURE YOUR VARIABLES
+------------------------------------- */
+/* Client-specific Styles */
+#outlook a {
+  padding: 0; }
+
+/* Force Outlook to provide a "view in browser" button. */
+body {
+  width: 100% !important; }
+
+.ReadMsgBody {
+  width: 100%; }
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass {
+  width: 100%;
+  display: block !important; }
+
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+  line-height: 100%; }
+
+/* Reset Styles */
+/* Add 100px so mobile switch bar doesn't cover street address. */
+html, body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0; }
+
+img {
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  display: block; }
+
+br, strong br, b br, em br, i br {
+  line-height: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 100% !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: blue !important; }
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active, h5 a:active, h6 a:active {
+  color: red !important; }
+
+/* Preferably not the same color as the normal header link color.  There is limited support for psuedo classes in email clients, this was added just for good measure. */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: purple !important; }
+
+/* Preferably not the same color as the normal header link color. There is limited support for psuedo classes in email clients, this was added just for good measure. */
+table td, table tr {
+  border-collapse: collapse; }
+
+.yshortcuts, .yshortcuts a, .yshortcuts a:link, .yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span {
+  color: black;
+  text-decoration: none !important;
+  border-bottom: none !important;
+  background: none !important; }
+
+table {
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt; }
+
+img {
+  -ms-interpolation-mode: bicubic; }
+
+/* -------------------------------------
+    GLOBAL
+------------------------------------- */
+/* Body text color for the New Yahoo.  This example sets the font of Yahoo's Shortcuts to black. */
+html, body, #background-table {
+  background-color: #000; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  width: 100% !important;
+  height: 100%;
+  line-height: 1.5;
+  color: #ffffff; }
+
+img {
+  max-width: 100%; }
+
+/* Let's make sure all tables have defaults */
+table td {
+  vertical-align: top; }
+
+/* -------------------------------------
+    TYPOGRAPHY
+------------------------------------- */
+h1, h2, h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #000;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 400; }
+
+h1 {
+  font-size: 32px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 14px;
+  font-weight: 600; }
+
+p, ul, ol {
+  margin: 0;
+  font-weight: normal; }
+  p li, ul li, ol li {
+    margin-left: 5px;
+    list-style-position: inside; }
+
+/* -------------------------------------
+    LINKS & BUTTONS
+------------------------------------- */
+a {
+  color: #ed174b;
+  text-decoration: underline; }
+
+.btn-primary {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #ed174b;
+  border: solid #ed174b;
+  border-width: 10px 20px;
+  line-height: 2;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  text-transform: capitalize; }
+
+/* -------------------------------------
+    HEADER
+------------------------------------- */
+#top-bar {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #ffffff; }
+
+.top-bar-content {
+  color: #ffffff;
+  font-weight: 300;
+  text-align: left;
+  font-size: 13px;
+  line-height: 18px; }
+
+.top-bar-content a {
+  color: #ababab;
+  text-decoration: underline; }
+
+#preheader {
+  color: #fff;
+  font-size: 1px;
+  height: 1px;
+  display: none;
+  visibility: hidden; }
+
+.header-content, .footer-content-left, .footer-content-right {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none; }
+
+/* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
+.header-content {
+  font-size: 12px;
+  color: #444; }
+
+.header-content a {
+  font-weight: bold;
+  color: #eeeeee;
+  text-decoration: none; }
+
+#headline p {
+  color: #eeeeee;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 30px; }
+
+#headline p a {
+  color: #eeeeee;
+  text-decoration: none; }
+
+/* -------------------------------------
+    Article
+------------------------------------- */
+/* Title
+------------------------------------- */
+.article-title > * {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  font-weight: 200; }
+  .article-title > * a {
+    text-decoration: underline; }
+  .article-title > * strong {
+    font-weight: 700;
+    color: #ed174b; }
+
+/* Content
+------------------------------------- */
+.article-content {
+  font-size: 13px;
+  line-height: 18px; }
+
+.article-content-without-title {
+  margin-top: 0; }
+
+.article-content a {
+  text-decoration: underline; }
+
+.article-content strong, .article-content strong a {
+  font-weight: bold;
+  font-weight: 900;
+  color: #999999; }
+
+.article-content p {
+  text-align: justify;
+  margin: 0 0 9px 0; }
+
+.article-content ol, .article-content ul {
+  margin-top: 0px;
+  margin-bottom: 9px;
+  margin-left: 18px;
+  padding: 0; }
+
+.article-content li {
+  font-size: 13px;
+  line-height: 18px; }
+
+.article-content li a {
+  text-decoration: underline; }
+
+/* -------------------------------------
+    Footer
+------------------------------------- */
+#unsubscribe, #footerText {
+  font-size: 13px;
+  line-height: 18px;
+  color: #cccccc; }
+  #unsubscribe a, #footerText a {
+    color: #cccccc; }
+
+/* -------------------------------------
+    RESPONSIVE AND MOBILE FRIENDLY STYLES
+------------------------------------- */
+@media only screen and (max-width: 480px) {
+  table[class=w0], td[class=w0] {
+    width: 0 !important; }
+  table[class=w10], td[class=w10], img[class=w10] {
+    width: 10px !important; }
+  table[class=w15], td[class=w15], img[class=w15] {
+    width: 5px !important; }
+  table[class=w30], td[class=w30], img[class=w30] {
+    width: 10px !important; }
+  table[class=w60], td[class=w60], img[class=w60] {
+    width: 10px !important; }
+  table[class=w125], td[class=w125], img[class=w125] {
+    width: 80px !important; }
+  table[class=w130], td[class=w130], img[class=w130] {
+    width: 55px !important; }
+  table[class=w140], td[class=w140], img[class=w140] {
+    width: 90px !important; }
+  table[class=w160], td[class=w160], img[class=w160] {
+    width: 180px !important; }
+  table[class=w170], td[class=w170], img[class=w170] {
+    width: 100px !important; }
+  table[class=w180], td[class=w180], img[class=w180] {
+    width: 80px !important; }
+  table[class=w195], td[class=w195], img[class=w195] {
+    width: 80px !important; }
+  table[class=w220], td[class=w220], img[class=w220] {
+    width: 80px !important; }
+  table[class=w240], td[class=w240], img[class=w240] {
+    width: 180px !important; }
+  table[class=w255], td[class=w255], img[class=w255] {
+    width: 185px !important; }
+  table[class=w275], td[class=w275], img[class=w275] {
+    width: 135px !important; }
+  table[class=w280], td[class=w280], img[class=w280] {
+    width: 135px !important; }
+  table[class=w300], td[class=w300], img[class=w300] {
+    width: 140px !important; }
+  table[class=w325], td[class=w325], img[class=w325] {
+    width: 95px !important; }
+  table[class=w360], td[class=w360], img[class=w360] {
+    width: 140px !important; }
+  table[class=w410], td[class=w410], img[class=w410] {
+    width: 180px !important; }
+  table[class=w470], td[class=w470], img[class=w470] {
+    width: 200px !important; }
+  table[class=w580], td[class=w580], img[class=w580] {
+    width: 280px !important; }
+  table[class=w640], td[class=w640], img[class=w640] {
+    width: 300px !important; }
+  table[class^=w], td[class^=w], img[class^=w] {
+    display: block !important; }
+  table[class=hide], td[class=hide], img[class=hide], p[class=hide], span[class=hide], .hide {
+    display: none !important; }
+  table[class=h0], td[class=h0] {
+    height: 0 !important; }
+  #headline p {
+    font-size: 30px !important; }
+  .mobile-block {
+    display: block;
+    width: 100%; }
+  .article-title {
+    font-size: 18px !important;
+    line-height: 27px !important;
+    margin: 0 0 6px 0 !important; }
+  .article-content {
+    font-size: 13px !important;
+    line-height: 20px !important; }
+  .top-bar-content a {
+    display: block; } }
